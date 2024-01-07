@@ -1,6 +1,6 @@
 package net.ensouledsteel.ender_relay;
 
-import net.ensouledsteel.ender_relay.initialize.ItemLibrary;
+import net.ensouledsteel.ender_relay.common.ItemLibrary;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;

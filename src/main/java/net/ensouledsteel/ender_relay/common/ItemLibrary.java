@@ -1,4 +1,4 @@
-package net.ensouledsteel.ender_relay.initialize;
+package net.ensouledsteel.ender_relay.common;
 
 import net.ensouledsteel.ender_relay.block.EnderRelay;
 import net.minecraft.block.Block;
