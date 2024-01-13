@@ -1,13 +1,11 @@
 package net.ensouledsteel.ender_relay.block;
 
-import net.ensouledsteel.ender_relay.EnderRelayMod;
 import net.ensouledsteel.ender_relay.block_entity.EnderRelayBlockEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.JukeboxBlockEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -16,9 +14,7 @@ import net.minecraft.nbt.NbtHelper;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.IntProperty;
-import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -48,7 +44,7 @@ public class EnderRelayBlock extends Block implements BlockEntityProvider {
 	@Override
 	public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
 		super.onPlaced(world, pos, state, placer, itemStack);
-		NbtCompound nbtCompound = BlockItem.getBlockEntityNbtFromStack(itemStack);
+		// TODO make pickblocked items place with lodestone data properly
 	}
 
 	// TODO Simplify this, especially the compass logic
