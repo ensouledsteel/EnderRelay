@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+	"textures": {
+		"side": "ender_relay:block/ender_relay_side_charged_1",
+		"top": "ender_relay:block/ender_relay_top",
+		"bottom": "ender_relay:block/ender_relay_bottom",
+		"particle": "ender_relay:block/ender_relay_side"
+	}
+}
